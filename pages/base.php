@@ -1,8 +1,9 @@
-<?php include 'pages/includes/head.php'; ?>
+<?php include 'pages/includes/html-head.php'; ?>
 
 <body>
-    <?php include 'pages/includes/header.php'; ?>
 
+    <?php include 'pages/includes/navbar.php'; ?>
+    
     <!-- Début de div Contents -->
     <div class="contents">
         

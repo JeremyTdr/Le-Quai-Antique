@@ -4,4 +4,4 @@
     <h2>Accueil</h2>
 </div>
 
-<?php include './pages/include/foot.php'; ?>
+<?php include './pages/includes/html-foot.php'; ?>
