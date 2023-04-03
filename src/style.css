@@ -15,6 +15,10 @@ body {
   letter-spacing: 0.5px;
   color: #454545;
 }
+body section {
+  margin: 0;
+  padding: 20px;
+}
 body a {
   color: inherit;
 }
@@ -74,9 +78,12 @@ body a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 15px 0;
+    justify-content: space-between;
+    height: 32vh;
+    padding: 10px 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
   }
   .nav img {
     margin: 0 auto;
@@ -96,12 +103,87 @@ body a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding: 0;
     border: none;
   }
   .nav .nav-items .nav-item {
     font-size: 1.2rem;
     padding: 0;
+  }
+}
+.header {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .background-img {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("./assets/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  filter: brightness(55%);
+  z-index: -1;
+}
+.header .header-content {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.header .header-content .header-text {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-family: Cinzel;
+  color: #ffffff;
+}
+.header .header-content .header-btns .header-btn {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.header .header-content .header-btns .menu {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    height: 68vh;
+  }
+  .header .header-content {
+    width: auto;
+    height: 50%;
+  }
+  .header .header-content .header-text {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .header .header-content .header-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header .header-content .header-btns .header-btn {
+    margin: 0;
+    padding: 12px 30px;
+  }
+  .header .header-content .header-btns .menu {
+    margin: 0;
   }
 }
 

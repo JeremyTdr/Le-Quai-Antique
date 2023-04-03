@@ -1,7 +1,5 @@
 <?php include './pages/base.php'; ?>
 
-<div class="section accueil" id="accueil">
-    <h2>Accueil</h2>
-</div>
+<?php include './pages/main.php'; ?>
 
 <?php include './pages/includes/html-foot.php'; ?>

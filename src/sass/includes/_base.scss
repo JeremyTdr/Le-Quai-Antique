@@ -17,10 +17,19 @@ $bg-color: #fbfbfb;
 $white: #ffffff;
 $light: #bdbdbd;
 
+$border-radius: 5px;
+$padding-btn-mobile: 12px 15px;
+$padding-btn-desktop: 12px 30px;
+
 body {
   font-family: "Poppins", sans-serif, "arial", sans-serif;
   letter-spacing: 0.5px;
   color: $textColor;
+
+  section {
+    margin: 0;
+    padding: 20px;
+  }
 
   a {
     color: inherit;
