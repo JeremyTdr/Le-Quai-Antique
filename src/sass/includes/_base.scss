@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap");
@@ -15,7 +16,7 @@ $mainColor: #202527;
 $textColor: #454545;
 $bg-color: #fbfbfb;
 $white: #ffffff;
-$light: #bdbdbd;
+$light: #eaeaea;
 
 $border-radius: 5px;
 $padding-btn-mobile: 12px 15px;
@@ -27,11 +28,40 @@ body {
   color: $textColor;
 
   section {
+    width: 100%;
     margin: 0;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    margin: 80px 25px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Cinzel", "Helvetica Neue", "Helvetica", "Arial";
+  }
+
+  h2 {
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
   }
 
   a {
     color: inherit;
+  }
+
+  @media screen and (min-width: 700px) {
+    .content {
+      margin: 90px auto;
+      width: 70%;
+    }
   }
 }

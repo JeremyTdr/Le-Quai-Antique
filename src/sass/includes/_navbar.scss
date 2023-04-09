@@ -51,6 +51,7 @@
 
   .nav-item {
     padding: 15px 0;
+    cursor: pointer;
   }
 }
 
@@ -93,6 +94,10 @@
       .nav-item {
         font-size: 1.2rem;
         padding: 0;
+      }
+
+      .nav-item:hover {
+        color: $textColor;
       }
     }
   }
