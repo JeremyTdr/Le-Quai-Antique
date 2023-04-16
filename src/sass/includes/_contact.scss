@@ -1,0 +1,79 @@
+.contact {
+  .content {
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px 10px;
+      background-color: $light;
+      border-radius: $border-radius;
+
+      .contact-infos {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .logo {
+          width: 10rem;
+        }
+
+        .infos-items {
+          .infos-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+
+            .fas {
+              padding-right: 10px;
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        .reseaux {
+          display: flex;
+          gap: 20px;
+          .fab {
+            font-size: 3rem;
+          }
+          #instagram {
+            color: #d94287;
+          }
+          #facebook {
+            color: #3b5998;
+          }
+        }
+      }
+
+      .contact-map {
+        padding: 10px;
+        height: 300px;
+
+        .google-maps {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+      .contact-items {
+        flex-direction: row;
+        gap: 20px;
+
+        .contact-infos {
+          align-items: flex-start;
+          flex: 1;
+        }
+        .contact-map {
+          flex: 2;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -44,7 +44,7 @@ body a {
 @media screen and (min-width: 700px) {
   body .content {
     margin: 90px auto;
-    width: 70%;
+    width: 800px;
   }
 }
 
@@ -231,7 +231,8 @@ body a {
 .bestDishes .content .bestDishes-items .bestDishes-item {
   width: 100%;
   height: auto;
-  border-radius: 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 @media screen and (min-width: 700px) {
   .bestDishes .content .bestDishes-items {
@@ -240,7 +241,72 @@ body a {
     gap: 0;
   }
   .bestDishes .content .bestDishes-items .bestDishes-item {
-    width: 26%;
+    width: 28%;
+  }
+}
+
+.contact .content .contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+.contact .content .contact-items .contact-infos {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.contact .content .contact-items .contact-infos .logo {
+  width: 10rem;
+}
+.contact .content .contact-items .contact-infos .infos-items .infos-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.contact .content .contact-items .contact-infos .infos-items .infos-item .fas {
+  padding-right: 10px;
+  font-size: 1.6rem;
+}
+.contact .content .contact-items .contact-infos .reseaux {
+  display: flex;
+  gap: 20px;
+}
+.contact .content .contact-items .contact-infos .reseaux .fab {
+  font-size: 3rem;
+}
+.contact .content .contact-items .contact-infos .reseaux #instagram {
+  color: #d94287;
+}
+.contact .content .contact-items .contact-infos .reseaux #facebook {
+  color: #3b5998;
+}
+.contact .content .contact-items .contact-map {
+  padding: 10px;
+  height: 300px;
+}
+.contact .content .contact-items .contact-map .google-maps {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media screen and (min-width: 700px) {
+  .contact .content .contact-items {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .contact .content .contact-items .contact-infos {
+    align-items: flex-start;
+    flex: 1;
+  }
+  .contact .content .contact-items .contact-map {
+    flex: 2;
+    height: auto;
   }
 }
 
