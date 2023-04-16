@@ -9,7 +9,7 @@
                     <li class="infos-item"><i class="fas fa-mobile-alt"></i>01 02 03 04 05</li>
                     <li class="infos-item"><i class="fas fa-envelope"></i>contact@quaiantique.fr</li>
                 </ul>
-                <div class="reseaux">
+                <div class="socials">
                     <a href="https://www.instagram.com/" id="instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/" id="facebook"><i class="fab fa-facebook-square"></i></a>
                 </div> 
